@@ -1,0 +1,271 @@
+// * {
+//     margin:0;
+//     padding: 0;
+//     // box-sizing: border-box;
+// }
+
+// body {
+//     width: 100vw;
+// }
+
+
+.container{
+    width: 100%;
+    display: grid;
+    
+    margin-top: 5%;
+    grid-template-columns: 1fr 2fr 2fr ;
+    
+
+   
+    
+}
+.first{
+    background-color: blue;
+}
+
+.second{
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 40%;
+    height: 100vh;
+   
+
+}
+
+.third{
+    background-color: orange;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+}
+.nav-wrapper{
+    width: 70%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+}
+// .brand-img{
+//     margin-top: 5px;
+//     height: 100%;
+
+// }
+
+.search-box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 25px;
+    background: #fafafa;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    color: rgba(0,0,0.5);
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.chat{
+    width: 50%;
+    height: 25px;
+    margin-left: 55%;
+    
+}
+.chat{
+    height: 100%;
+    cursor: pointer;
+    margin:0 10px;
+    display: inline-block;
+}
+
+.image{
+    height: 22px;
+    position: relative;
+    display: flex;
+   
+}
+
+.user{
+    border-radius: 50%;
+    background-size:cover ;
+}
+
+
+
+@media (max-width:720px) {
+    .search-box{
+        display: none;
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .main{
+//     display: flex;
+//     position: relative;
+//     height: 35px;
+    
+// }
+// .view{
+//     width: 35%;
+//     height: 15vh;
+//     justify-content: center;
+//     align-items: center;
+    
+
+// }
+
+.main{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.wrapper{
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+
+}
+
+.left-col{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.status-wrapper{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    padding: 10px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+  
+   
+
+}
+
+.feeds{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-top: 30px;
+  
+
+}
+.status-card{
+    flex: 0 0 auto;
+    width: 80px;
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+.profile{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    background: linear-gradient(45deg,rgb(255,230,0),rgb(255,0,128) 80%);
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid orange;
+    
+}
+.username{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(0,0,0.5);
+}
+
+@media (max-width:700px)
+{
+    .status-card{
+        width: 100%;
+    }
+}
+
+@media (max-width:999px){
+    .tag{
+        display: none;
+    }
+
+    
+
+
+}
+
+
+
+.info{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.info .username{
+    width: auto;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.info .user{
+    display:flex;
+    align-items: center;
+
+}
+
+
+.info .profile{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    background-color: black;
+}
+.feed-image{
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
